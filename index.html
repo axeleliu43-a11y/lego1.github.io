@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L E G O</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>L E G O</h1>
+        <p>Aprende sobre LEGO</p>
+        <button id="btn-tema" class="boton-tema">Modo Oscuro</button>
+    </header>
+ 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#sets">Sets</a></li>
+            <li><a href="#Experiencias">Experiencias</a></li>
+            <li><a href="https://www.lego.com/es-mx" target="_blank">OFICIAL LEGO</a></li>
+        </ul>
+    </nav>
+ 
+    <main>
+        <section class="carrusel">
+            <div class="carrusel-diapositivas">
+                <div class="diapositiva">
+                    <img src="Imagenes/Lego.png" alt="Imagen 1">
+                    <div class="carrusel-texto">
+                        <h3>Colección Clásica</h3>
+                        <p>¡Bienvenidos a nuestro mundo de bloques!</p>
+                    </div>
+                </div>
+ 
+                <div class="diapositiva">
+                    <img src="Imagenes/Lego2.png" alt="Imagen 2">
+                    <div class="carrusel-texto">
+                        <h3>Ediciones Especiales</h3>
+                        <p>Descubre los sets más complejos y detallados.</p>
+                    </div>
+                </div>
+ 
+                <div class="diapositiva">
+                    <img src="Imagenes/Lego3.png" alt="Imagen 3">
+                    <div class="carrusel-texto">
+                        <h3>Batallas Épicas</h3>
+                        <p>Construye tus propios escenarios de acción.</p>
+                    </div>
+                </div>
+ 
+                <div class="diapositiva">
+                    <img src="Imagenes/Lego.png" alt="Imagen 4">
+                    <div class="carrusel-texto">
+                        <h3>Creatividad Sin Límites</h3>
+                        <p>¡Imagina, construye y diviértete con LEGO!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="sets" class="sets">
+            <h2>Sets Destacados</h2>
+            <p>Explora algunas de las líneas más populares de LEGO.</p>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>LEGO Technic</h3>
+                    <p>Mecanismos reales, engranajes y funciones motorizadas para los amantes de la ingeniería.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>LEGO Star Wars</h3>
+                    <p>Naves, escenas icónicas y personajes de una de las sagas más queridas del cine.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>LEGO City</h3>
+                    <p>Vehículos, edificios y personajes ideales para recrear la vida cotidiana en miniatura.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>LEGO Architecture</h3>
+                    <p>Réplicas detalladas de monumentos y edificios famosos alrededor del mundo.</p>
+                </article>
+            </div>
+        </section>
+ 
+        <section id="Experiencias" class="experiencias">
+            <h2>Experiencias LEGO</h2>
+            <p>Más allá de los sets, LEGO ofrece experiencias para toda la familia.</p>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>LEGOLAND</h3>
+                    <p>Parques temáticos con atracciones, espectáculos y zonas construidas con millones de piezas.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>LEGO Masters</h3>
+                    <p>Un programa de televisión donde equipos compiten construyendo creaciones increíbles.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Talleres Creativos</h3>
+                    <p>Actividades presenciales y en línea para aprender técnicas de construcción avanzadas.</p>
+                </article>
+            </div>
+ 
+            <!-- Zona de comentarios: solo en Experiencias LEGO -->
+            <div class="comentarios-caja">
+                <h3>Comparte tu experiencia</h3>
+                <form id="form-comentario" class="form-comentario">
+                    <input type="text" id="nombre-comentario" placeholder="Tu nombre" required>
+                    <textarea id="texto-comentario" placeholder="Cuéntanos tu experiencia con LEGO..." required></textarea>
+                    <button type="submit">Agregar comentario</button>
+                </form>
+ 
+                <ul id="lista-comentarios" class="lista-comentarios"></ul>
+ 
+                <div class="botones-descarga">
+                    <button id="btn-excel" class="btn-descarga excel" type="button">Descargar Excel</button>
+                    <button id="btn-pdf" class="btn-descarga pdf" type="button">Descargar PDF</button>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes dudas o sugerencias? Escríbenos para más contenido sobre LEGO.</p>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; LEGO.</p>
+    </footer>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
